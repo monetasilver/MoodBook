@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100d18"><title>MoodBook</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<header><a class="brand" href="#"><b>M</b> moodbook<span>.</span></a><button id="lang">EN</button></header>
+<main>
+<aside><small>ТВОЁ ПРОСТРАНСТВО</small><nav><a class="active">◈ Дневник</a><a>▦ Календарь</a><a>⌁ Статистика</a><a>◎ Лента</a></nav><p>● Твои записи видны только тебе, пока ты сам не решишь иначе.</p></aside>
+<section class="content">
+<small class="eyebrow">A NEW PAGE / ТВОЙ НОВЫЙ ЛИСТ</small>
+<div class="heading"><div><h1 id="hello">Как ты <i>сегодня?</i></h1><p>Не нужно подбирать правильные слова. Просто отметь момент.</p></div><time id="date"></time></div>
+<section class="panel"><div class="row"><h2>Поймай своё настроение</h2><small>01 / 03</small></div>
+<div class="moods" id="moods">
+<button data-mood="happy">☀️<small>Счастье</small></button><button data-mood="calm">☁️<small>Спокойствие</small></button><button data-mood="love">♡<small>Влюблённость</small></button><button data-mood="sad">☂️<small>Грусть</small></button><button data-mood="anxious">〰️<small>Тревога</small></button><button data-mood="angry">✳️<small>Злость</small></button><button data-mood="tired">🌙<small>Усталость</small></button><button data-mood="empty">◇<small>Пустота</small></button>
+</div>
+<label for="note">Что у тебя на уме?</label><textarea id="note" maxlength="1200" placeholder="Можешь написать пару слов, целую историю или вообще ничего..."></textarea>
+<div class="row under"><label class="check"><input type="checkbox" id="public"> Поделиться с сообществом</label><small id="count">0 / 1200</small></div>
+<div class="row under"><small>⌑ Приватная запись по умолчанию</small><button class="save" id="save">Сохранить запись ↗</button></div>
+</section>
+<div class="bottom"><section class="panel"><div class="row"><h2>Последние моменты</h2><small id="total">0</small></div><div id="entries"><p class="muted">Здесь появятся твои записи. Начни с маленького момента.</p></div></section>
+<section class="panel quote"><strong>“</strong><p>Ты не обязан чувствовать себя одинаково каждый день.</p><small>MOODBOOK / NOTE 001</small></section></div>
+<footer>MOODBOOK © 2026 <span>MADE OF MANY MOODS.</span></footer>
+</section></main><div id="toast"></div><script src="app.js"></script></body></html>
